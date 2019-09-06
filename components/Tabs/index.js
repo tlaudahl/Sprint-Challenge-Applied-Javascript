@@ -8,7 +8,6 @@
 //  The tab component should look like this:
 //    <div class="tab">topic here</div>
 
-const topics = [];
 const topicsDiv = document.querySelector('.topics');
 
 axios.get('https://lambda-times-backend.herokuapp.com/topics')
