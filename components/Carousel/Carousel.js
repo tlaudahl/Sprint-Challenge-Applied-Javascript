@@ -17,3 +17,53 @@
     <div class="right-button"> > </div>
   </div>
 */
+
+const carouselContainer = document.querySelector('.carousel-container');
+
+function createCarousel() {
+  const carouselDiv = document.createElement('div');
+  carouselDiv.classList.add('carousel');
+
+  // Left Button
+  const leftBtnDiv = document.createElement('div');
+  leftBtnDiv.classList.add('left-button');
+  leftBtnDiv.textContent = ' < ';
+  // Append
+  carouselDiv.appendChild(leftBtnDiv);
+
+  // mountain img
+  const mtnImg = document.createElement('img');
+  mtnImg.src = "./assets/carousel/mountains.jpeg";
+  // Append
+  carouselDiv.appendChild(mtnImg);
+
+    // computer img
+  const compImg = document.createElement('img');
+  compImg.src = "./assets/carousel/computer.jpeg";
+  //Append
+  carouselDiv.appendChild(compImg);
+
+  // trees img
+  const treesImg = document.createElement('img');
+  treesImg.src = "./assets/carousel/trees.jpeg";
+  //Append
+  carouselDiv.appendChild(treesImg);
+
+  // turntable img
+  const turntableImg = document.createElement('img');
+  turntableImg.src = "./assets/carousel/mountains.jpeg";
+  //Append
+  carouselDiv.appendChild(turntableImg);
+
+  // right button
+  const rightBtn = document.createElement('div');
+  rightBtn.classList.add('right-button');
+  rightBtn.textContent = ' > ';
+  //Append
+  carouselDiv.appendChild(rightBtn);
+
+  return carouselDiv;
+}
+
+
+carouselContainer.appendChild(createCarousel());
